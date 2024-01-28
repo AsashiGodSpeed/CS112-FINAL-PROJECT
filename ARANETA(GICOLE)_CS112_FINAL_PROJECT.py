@@ -1,14 +1,13 @@
 import random  # Import the random module for generating random numbers
 import sys  # Import the sys module for system-related functionalities
 
-# Define a class to keep the track of scores
+
 class Score:
     def __init__(self, wins, losses, ties):
         self.wins = wins
         self.losses = losses
         self.ties = ties
 
-# Define a function for the one-player game.
 
 def one_plr():
 
@@ -60,7 +59,7 @@ def one_plr():
     else:
         print(f"It's a tie! {player.wins} win, {player.losses} lost, {player.ties} tie")
 
-# Define a function for the two-player game.
+
 def two_plr():
     # Initialize wins, ties, and looses counts for players 1 and player 2 to 0
     scoreboard = Score(0, 0, 0)
@@ -123,7 +122,7 @@ def two_plr():
     else:
         print(f"It's a tie! Player 1 = {scoreboard.wins},  Player 2 = {scoreboard.losses}, Tie = {scoreboard.ties}")
 
-# Define a function to ask the player if they want to play again or exit
+
 def play_again(repeat):
     while True:
         if repeat == 'N':
@@ -133,8 +132,8 @@ def play_again(repeat):
         else:
             print("Enter only Y or N")
 
-# The Main program starts here.
-print("***************************************"
+
+print("*************************************"
       "\n*************-Element Clash-*************"
       "\n*****************************************\n")
 while True:
